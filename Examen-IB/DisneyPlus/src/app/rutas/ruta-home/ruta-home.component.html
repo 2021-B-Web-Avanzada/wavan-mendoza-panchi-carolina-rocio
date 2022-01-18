@@ -1,0 +1,18 @@
+<html>
+    <div class="home">
+      <app-nav-bar></app-nav-bar>
+      <app-carousel></app-carousel>
+      <app-principal-section></app-principal-section>
+      <app-recommended-section></app-recommended-section>
+      <div *ngFor="let section of arrayNewSection; let i = index">
+        <app-recommended-section
+          [title]="section.title"
+          [section1] = "section.linkImage1"
+          [section2] = "section.linkImage2"
+          [section3] = "section.linkImage3"
+          [section4] = "section.linkImage4"
+        ></app-recommended-section>
+      </div>
+      <app-info></app-info>
+    </div>
+</html>

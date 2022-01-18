@@ -1,0 +1,107 @@
+
+.d-flex{
+  padding-top:40px;
+  justify-content: center;
+}
+.btn{
+  width: 220px;
+  height:120px;
+  display: inline-block;
+  justify-content: center;
+  background-color: #2B2D38;
+  border-color: #3C3D48;
+  border-width: 4px;
+  border-radius: 12px;
+  box-shadow: 7px 7px 9px 0 rgb(19, 19, 19);
+}
+
+img{
+  max-width: 380px;
+  max-height:210px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+}
+
+.btn:hover {
+  border-color: #C9D6E9;
+  border-width: 3px;
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+}
+
+.hover-image{
+  display: none;
+  width: 212px;
+  height:113px;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.btn:hover .hover-image{
+  display:block;
+  top:0%;
+  right:1%;
+}
+
+//disney button
+.element1:hover .btn:hover{
+  background-color:#134CA9;
+}
+
+.btn:hover #disney{
+  z-index: 1;
+  top:5%;
+  right:3%;
+  position: absolute;
+}
+
+//pixar button
+.element2:hover .btn:hover{
+  background-color:#5BADFF;
+}
+
+.btn:hover #pixar{
+  z-index: 1;
+  top:5%;
+  right:3%;
+  position: absolute;
+}
+
+//marvel button
+.element3:hover .btn:hover{
+  background-color:#C9D6E9;
+}
+
+.btn:hover #marvel{
+  z-index: 1;
+  top:5%;
+  right:3%;
+  position: absolute;
+}
+
+//starWars button
+.element4:hover .btn:hover{
+  background-color:#C9D6E9;
+}
+
+.btn:hover #starWars{
+  z-index: 1;
+  top:5%;
+  right:3%;
+  position: absolute;
+}
+
+//national button
+.element5:hover .btn:hover{
+  background-color:#C9D6E9;
+}
+
+.btn:hover #national{
+  z-index: 1;
+  top:5%;
+  right:3%;
+  position: absolute;
+}

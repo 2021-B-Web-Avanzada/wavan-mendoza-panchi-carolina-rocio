@@ -1,0 +1,30 @@
+.search{
+  display: block;
+  padding-top: 4%;
+  box-shadow: 0 22px 176px 10px rgba(0, 0, 0);
+
+}
+input,
+input::placeholder {
+  font-size: 38px;
+  line-height: 3;
+  font-weight: bold;
+  padding-left: 5px;
+  color: #96979B;
+}
+input{
+  padding-left: 70px;
+  background-color: #494C58;
+  border-style:none;
+  position:fixed;
+  left:0px;
+  z-index: calc(9);
+}
+input:focus{
+  background: linear-gradient(#494C58, #616575);
+}
+
+input:focus::placeholder{
+  color: #E8E8E8;
+}
+

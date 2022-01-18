@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a17624a3-6fb5-42b8-b0cf-605b2ccfc67e" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="213Kf2ubJLBBYdfJJTOla4Guqmj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/wavan-garcia-mosquera-francisco-javier-desarrollo" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\Documents\GitKraken\wavan-mendoza-panchi-carolina-rocio\Examen-IB\DisneyPlus\src\app\componentes\recommended-section\recommended-section" />
+      <recent name="C:\Users\LENOVO\Documents\GitKraken\wavan-mendoza-panchi-carolina-rocio\Examen-IB\DisneyPlus\src\assets\img" />
+      <recent name="C:\Users\LENOVO\Documents\GitKraken\wavan-mendoza-panchi-carolina-rocio\Examen-IB\DisneyPlus\src\assets" />
+      <recent name="C:\Users\LENOVO\Documents\GitKraken\wavan-mendoza-panchi-carolina-rocio\03-angular\ejemplo\src\app\modulo\modulo-inventario\rutas" />
+      <recent name="C:\Users\LENOVO\Documents\GitKraken\wavan-mendoza-panchi-carolina-rocio\03-angular\ejemplo\src\app" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a17624a3-6fb5-42b8-b0cf-605b2ccfc67e" name="Changes" comment="" />
+      <created>1637164430950</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637164430950</updated>
+      <workItem from="1637164433357" duration="765000" />
+      <workItem from="1637238528349" duration="5508000" />
+      <workItem from="1637244113648" duration="124000" />
+      <workItem from="1637669928084" duration="5959000" />
+      <workItem from="1637755827144" duration="6897000" />
+      <workItem from="1637842865187" duration="4291000" />
+      <workItem from="1638275013318" duration="5494000" />
+      <workItem from="1638361072206" duration="6653000" />
+      <workItem from="1638447666526" duration="5609000" />
+      <workItem from="1638879892543" duration="4826000" />
+      <workItem from="1638966572023" duration="5177000" />
+      <workItem from="1639052354571" duration="3431000" />
+      <workItem from="1639057962395" duration="1414000" />
+      <workItem from="1639343274594" duration="447000" />
+      <workItem from="1639343789743" duration="1971000" />
+      <workItem from="1639484143853" duration="5633000" />
+      <workItem from="1639517953424" duration="10040000" />
+      <workItem from="1639570086741" duration="8615000" />
+      <workItem from="1639657620604" duration="6020000" />
+      <workItem from="1639859460664" duration="4129000" />
+      <workItem from="1639923970992" duration="5466000" />
+      <workItem from="1639942391802" duration="1597000" />
+      <workItem from="1640088733410" duration="601000" />
+      <workItem from="1640650471941" duration="1187000" />
+      <workItem from="1641705112996" duration="1422000" />
+      <workItem from="1641743042145" duration="45853000" />
+      <workItem from="1642029552387" duration="26695000" />
+      <workItem from="1642098325075" duration="12869000" />
+      <workItem from="1642121194830" duration="2285000" />
+      <workItem from="1642132510990" duration="2808000" />
+      <workItem from="1642181524781" duration="7265000" />
+      <workItem from="1642204211539" duration="12510000" />
+      <workItem from="1642217156840" duration="1271000" />
+      <workItem from="1642223822444" duration="32258000" />
+      <workItem from="1642307929423" duration="27472000" />
+      <workItem from="1642392752419" duration="4427000" />
+      <workItem from="1642424545085" duration="12643000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/02-typescript/01-variables.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="javascript">
+          <url>file://$PROJECT_DIR$/03-angular/ejemplo/src/app/rutas/ruta-login/ruta-login.component.html</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
