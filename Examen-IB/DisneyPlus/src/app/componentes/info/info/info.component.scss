@@ -1,0 +1,32 @@
+.container{
+  margin-top: 10%;
+  color: #FFFFFF;
+  background-color: #080B12;
+  min-width: 100%;
+  flex-direction: column;
+  min-height: 40vh;
+}
+.row{
+  justify-content: center;
+}
+.flex-row{
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.p-2{
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.row1{
+  margin-bottom: 10px;
+}
+
+img{
+  padding-top: 20px;
+  padding-left: 38px;
+  padding-bottom: 10px;
+  max-width: 10%;
+  max-height: 10%;
+}

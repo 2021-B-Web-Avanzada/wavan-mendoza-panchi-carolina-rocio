@@ -1,0 +1,23 @@
+<html>
+  <app-nav-bar></app-nav-bar>
+  <app-search-bar></app-search-bar>
+  <h4 [ngStyle]="{
+  'padding-top': '13%',
+  'padding-bottom': '10px',
+  'color':'#f9f9f9',
+  'margin-left': '5%',
+  'font-size': '44px',
+  'display': 'block',
+  'text-transform': 'capitalize'
+  }">Explore</h4>
+  <app-collection></app-collection>
+  <div *ngFor="let collection of arrayCollection; let i = index">
+    <app-collection
+      [collection1] = "collection.linkImage1"
+      [collection2] = "collection.linkImage2"
+      [collection3] = "collection.linkImage3"
+      [collection4] = "collection.linkImage4"
+    ></app-collection>
+  </div>
+  <app-info></app-info>
+</html>

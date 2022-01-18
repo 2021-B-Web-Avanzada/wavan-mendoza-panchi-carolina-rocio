@@ -1,10 +1,10 @@
 import {Injectable} from '@angular/core'
 import {AuthService} from "./auth service";
-import {ActivatedRouteSnapshot, Router, RouterStateSnapshot, UrlTree} from "@angular/router";
+import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree} from "@angular/router";
 import {Observable} from "rxjs";
 
 @Injectable()
-export class EsAdministradorGuard{
+export class EsAdministradorGuard implements CanActivate{
 //Inyeccion de dependencias
   constructor(
     private readonly _authService: AuthService,
