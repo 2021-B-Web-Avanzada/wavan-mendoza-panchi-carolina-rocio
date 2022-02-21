@@ -1,0 +1,36 @@
+
+<h6>NG FOR</h6>
+<div *ngFor="let usuario of arregloUsuarios; let i = index">
+  <!--  <p>{{i}} - {{usuario.id}} - {{usuario.nombre}} </p>-->
+  <app-banner-imagenes [color]="usuario.color"
+                       [url]="usuario.link"
+                       [urlImagen]="usuario.linkImagen">
+  </app-banner-imagenes>
+</div>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>Indice</th>
+    <th>ID</th>
+    <th>Nombre</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let usuario of arregloUsuarios; let i = index">
+    <td>{{i}}</td>
+    <td>{{usuario.id}}</td>
+    <td>{{usuario.nombre}}</td>
+  </tr>
+  </tbody>
+</table>
+
+<!--Directiva: NG IF -> IF -->
+
+<button (click)="cambiarOcultarBanner()">
+  <!-- (condicion) ? verdadero : false  -->
+  {{ (mostrarSegundoBanner) ? 'Ocultar' : 'Mostrar' }}
+</button>
+<app-banner-imagenes *ngIf="mostrarSegundoBanner">
+</app-banner-imagenes>
+
