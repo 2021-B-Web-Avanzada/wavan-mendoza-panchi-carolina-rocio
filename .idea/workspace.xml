@@ -5,58 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a17624a3-6fb5-42b8-b0cf-605b2ccfc67e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/nest-cli.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/src/app.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/src/app.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/src/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/src/app.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/src/eventos/eventos.gateway.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/src/eventos/eventos.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/test/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/test/jest-e2e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/tsconfig.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B-websocket/websockets/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/.vscode/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/.vscode/tasks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/app/app.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/app/rutas/juego-sala/juego-sala.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/app/rutas/juego-sala/juego-sala.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/app/rutas/juego-sala/juego-sala.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/app/rutas/juego-sala/juego-sala.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/src/app/servicios/websockets/websockets.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen-2B/colourBlindGame/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen-2B/colourBlindGame/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Examen-2B/colourBlindGame/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +131,7 @@
       <workItem from="1645310670198" duration="2996000" />
       <workItem from="1645368584933" duration="6197000" />
       <workItem from="1645398653560" duration="68000" />
-      <workItem from="1646420073928" duration="4780000" />
+      <workItem from="1646420073928" duration="5800000" />
     </task>
     <servers />
   </component>
