@@ -6,7 +6,6 @@ import {EventosGateway} from './eventos.gateway';
         EventosGateway
     ],
     exports:[
-        EventosGateway
     ]
 })
 export class EventosModule {

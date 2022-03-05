@@ -11,5 +11,16 @@ import{ Server, Socket } from 'socket.io'
 
 export class EventosGateway{
 
+    @SubscribeMessage('hola')
+        devolverHola(
+            @MessageBody() message,
+            @ConnectedSocket() socket:Socket
+    ){
+        console.log(socket)
+        console.log(socket.id)
+        return {message, saludo: 'hola'}
+        }
+
+
 }
 

@@ -8,4 +8,10 @@ import {Observable} from 'rxjs';
 export class WebsocketsService {
   constructor(private socket: Socket) {
   }
+  ejecutarEventoHola(){
+    const resp = this.socket.emit('hola', {
+      nombre: 'Carolina'
+    });
+    console.log(resp);
+  }
 }
