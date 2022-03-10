@@ -14,6 +14,15 @@ import { SignInComponent } from './componentes-auth/sign-in/sign-in.component';
 import { VerifyEmailComponent } from './componentes-auth/verify-email/verify-email.component';
 import { SignUpComponent } from './componentes-auth/sign-up/sign-up.component';
 import {ForgotPasswordComponent} from "./componentes-auth/forgot-password/forgot-password.component";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {MatIconModule} from "@angular/material/icon";
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatButtonModule} from "@angular/material/button";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -32,6 +41,14 @@ import {ForgotPasswordComponent} from "./componentes-auth/forgot-password/forgot
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatCardModule,
+    MatDividerModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
