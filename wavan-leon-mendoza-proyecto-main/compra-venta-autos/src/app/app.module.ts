@@ -23,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
+import {BannerComponent} from "./componentes-banner/banner/banner.component";
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import {MatDividerModule} from '@angular/material/divider';
     VerifyEmailComponent,
     ForgotPasswordComponent,
     SignUpComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
