@@ -9,68 +9,31 @@
 
 <mat-card>
   <mat-card-title>Sign-Up</mat-card-title>
+  <mat-card-content>Ingresa la información solicitada para registrarte</mat-card-content>
   <form [formGroup]="formGroup">
 
     <mat-form-field class="example-full-width" appearance="fill">
       <mat-label>Email</mat-label>
-      <input matInput placeholder="luis@hotmail.com" #userName formControlName="userEmail">
-    </mat-form-field>
+      <input matInput placeholder="luis@hotmail.com" #userEmail formControlName="userEmail">
+    </mat-form-field><br>
 
     <mat-form-field class="example-full-width" appearance="fill">
       <mat-label>Password</mat-label>
-      <input matInput #userPassword  formControlName="userPass">
+      <input matInput #userPwd  formControlName="userPass">
     </mat-form-field><br>
 
-    <button class="signBtn" mat-stroked-button color="primary" (click)="auth.SignIn(userName.value, userPassword.value)">Log-in</button><br>
+    <button class="signBtn" mat-stroked-button color="primary" (click)="auth.SignUp(userEmail.value, userPwd.value)">Sign Up</button><br>
 
+    <mat-divider>
+    </mat-divider><br>
+
+    <button class="googleAuthBtn" mat-stroked-button color="primary" (click)="auth.GoogleAuth()">Continue with Google</button><br>
+
+      <span>Already have an account?<span class="redirect" routerLink="/sign-in">Log In</span></span>
 
   </form>
 </mat-card>
 
-        <input
-          type="email"
-          class="formControl"
-          placeholder="Email Address"
-          #userEmail
-          required
-        />
 
-      <div class="formGroup">
-        <input
-          type="password"
-          class="formControl"
-          placeholder="Password"
-          #userPwd
-          required
-        />
-      </div>
-      <div class="formGroup">
-        <input
-          type="button"
-          class="btn btnPrimary"
-          value="Sign Up"
-          (click)="auth.SignUp(userEmail.value, userPwd.value)"
-        />
-      </div>
-      <div class="formGroup">
-        <span class="or"><span class="orInner">Or</span></span>
-      </div>
-      <!-- Continue with Google -->
-      <div class="formGroup">
-        <button
-          type="button"
-          class="btn googleBtn"
-          (click)="auth.GoogleAuth()"
-        >
-          <i class="fab fa-google-plus-g"></i>
-          Continue with Google
-        </button>
-      </div>
 
-    <div class="redirectToLogin">
-      <span
-      >Already have an account?
-        <span class="redirect" routerLink="/sign-in">Log In</span></span
-      >
-    </div>
 

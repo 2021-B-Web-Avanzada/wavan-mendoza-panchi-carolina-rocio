@@ -13,3 +13,76 @@
   font-size: 35px;
 }
 
+.branch{
+  margin-left: 20px;
+}
+
+.mat-toolbar{
+  background-color: #7D6ED6;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+  font-family:"Microsoft Yi Baiti";
+  font-size: 35px;
+}
+
+.mat-card{
+  width: 400px;
+  height: 360px;
+  display: inline-block;
+  align-content: center !important;
+  margin-left: 35%;
+  box-shadow: 0 4px 4px 0 rgba(.4,.4,.4,.2);
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.mat-stroked-button{
+  transform: translate(0px,-7px)
+}
+
+.mat-divider{
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.signBtn{
+  margin-left: 23%;
+  padding-left: 19%;
+  padding-right: 19%;
+}
+
+.signBtn:hover{
+  background-color: #7D6ED6;
+  color: white;
+}
+
+.googleAuthBtn{
+  background-image:url("https://img.icons8.com/color/48/000000/google-logo.png");
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  background-size: 30px;
+  background-position-x: 10px;
+  background-position-y: 2px;
+  margin-left: 23%;
+  margin-bottom: 10px;
+}
+
+.googleAuthBtn:hover{
+  background-color: #7D6ED6;
+  color: white;
+}
+.redirect:hover{
+  text-decoration-line: underline;
+  color:blue;
+}
