@@ -4,11 +4,21 @@
 <mat-card>
   <mat-card-title>Color Blind Multiplayer</mat-card-title><br>
   <mat-card-content> Es un juego simple en el que tu objetivo es hacer clic en los diferentes tonos de color! </mat-card-content>
-  <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Ingresa un código sala</mat-label>
-    <input matInput placeholder="Ej:12345">
-  </mat-form-field>
-  <button mat-raised-button color="primary" (click)="abrirDialogo()">Crea una nueva sala</button>
+
+  <form [formGroup]="formGroup" (ngSubmit)="unirseSala()">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Ingresa tu nombre</mat-label>
+      <input matInput formControlName="nombreUsuario">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Ingresa un código sala</mat-label>
+      <input matInput placeholder="Ej:12345" formControlName="codigoSala">
+    </mat-form-field><br>
+
+    <button mat-flat-button color="primary" type="submit" [disabled]="!formGroup.valid"> Entrar a mi sala </button>
+  </form>
+
 </mat-card>
 </html>
 

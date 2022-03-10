@@ -1,1 +1,25 @@
-<p>juego-sala works!</p>
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <div class="row">
+    <h1>{{mensajeInicio1}}</h1><br>
+  </div>
+
+    <div class="row counter">
+      <app-counter  [from]=0 [to]=100 [of]=100 [animationTime]="10000" [showCircle]="true" [delay]="2100"  [circleColor]=text> </app-counter>
+    </div><br>
+      <div class="row">
+        <button mat-icon-button color="warn" (click)="mostrarMensaje()" >
+          <mat-icon>play_circle_filled</mat-icon>
+        </button>
+      </div>
+
+</div>
+
+<div class="mainBox">
+  <div class="box"><app-circulo></app-circulo></div>
+  <div class="box"><app-circulo></app-circulo></div>
+  <div class="box"> <app-circulo></app-circulo></div>
+  <div class="box"> <app-circulo></app-circulo></div>
+  <div class="box"> <app-circulo></app-circulo></div>
+  <div class="box">  <app-circulo></app-circulo></div>
+</div>

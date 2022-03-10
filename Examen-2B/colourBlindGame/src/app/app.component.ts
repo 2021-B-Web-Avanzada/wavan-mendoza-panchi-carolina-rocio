@@ -13,7 +13,4 @@ constructor(
 ) {
 }
 
-   eventoHola(){
-      this.WebsocketsService.ejecutarEventoHola()
-  }
 }

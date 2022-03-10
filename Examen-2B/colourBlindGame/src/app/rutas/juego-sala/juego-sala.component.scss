@@ -1,0 +1,35 @@
+.container{
+  display: inline-block;
+  justify-content: center !important;
+  padding:4% 3% 4% 6%;
+  margin-left: 3%;
+  border-style:solid;
+  border-color: #dcdcdc;
+  transform: translate(10px, -110px);
+}
+.mat-icon-button{
+  margin-left: 55px;
+  transform: scale(2);
+}
+.counter{
+  margin-right: 50px;
+}
+h1{
+  margin-left: 12%;
+}
+
+.mainBox{
+  display: inline-block;
+  justify-content: center !important;
+  margin-top: 2%;
+  margin-left: 5%;
+  padding:4% 3% 2% 6%;
+  border-style:solid;
+  border-color: #dcdcdc;
+  width: 600px;
+}
+
+.box{
+  float:left;
+  padding-left: 10px;
+}

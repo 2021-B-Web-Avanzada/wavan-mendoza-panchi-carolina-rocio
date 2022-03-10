@@ -14,6 +14,10 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
 import {VentanaComponent} from './componentes/ventana/ventana.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {CounterModule} from 'angular-circle-counter';
+import {CirculoModule} from './componentes/circulo/circulo.module'
+
 
 @NgModule({
   declarations: [
@@ -24,6 +28,9 @@ import {VentanaComponent} from './componentes/ventana/ventana.component';
   ],
   imports: [
     BrowserModule,
+    CirculoModule,
+    CounterModule,
+    ReactiveFormsModule,
     NavBarModule,
     AppRoutingModule,
     MatCardModule,
