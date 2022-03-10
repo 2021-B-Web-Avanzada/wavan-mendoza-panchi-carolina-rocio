@@ -1,0 +1,46 @@
+.mat-card{
+  width: 350px;
+  height: 360px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  vertical-align:middle;
+  margin-top: 80px;
+}
+.material-icons{
+  width: 350px;
+  height: 300px;
+}
+html{
+  background-image: url("https://i.stack.imgur.com/x6a70.png");
+
+  background-attachment: fixed;
+  background-position: center;
+}
+
+mat-card .mat-card-title{
+  font-size: 28px;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-family:Helvetica,sans-serif
+}
+
+mat-card .mat-card-content{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right:25px ;
+  font-family:Helvetica,serif
+}
+
+.example-full-width{
+  margin-left: 20px;
+}
+
+button{
+  margin-left: 20px;
+  height: 50px;
+}
+
+

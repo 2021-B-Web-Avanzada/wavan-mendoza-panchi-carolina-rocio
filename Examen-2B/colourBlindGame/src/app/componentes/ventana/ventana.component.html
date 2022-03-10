@@ -1,0 +1,25 @@
+<div mat-dialog-actions>
+  <button mat-icon-button color="primary" mat-dialog-close
+          (click)="cerrarDialogo()">
+    <mat-icon>clear</mat-icon>
+  </button>
+</div>
+
+<h1 mat-dialog-title>
+  Crear sala
+</h1>
+
+<div mat-dialog-content>
+  Ingresa un número de sala
+</div><br>
+
+<div>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Ingresa un código sala</mat-label>
+    <input matInput placeholder="Ej:12345">
+  </mat-form-field>
+</div>
+
+<div>
+  <button mat-raised-button color="primary">Crear sala</button>
+</div>
