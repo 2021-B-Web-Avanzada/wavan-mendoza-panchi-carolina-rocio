@@ -16,7 +16,6 @@ export class JuegoSalaComponent implements OnInit {
   @ViewChild('divlvl3', { static: false }) divlvl3: ElementRef | undefined;
   @ViewChild('divlvl3', { static: false }) divlvl4: ElementRef | undefined;
 
-  @Input()
   removeAfter: number | undefined;
 
   arregloColores = [{correctAnswer: false, color: "#ff9eda"}, {correctAnswer: false, color: "#ff9eda"}, {correctAnswer: false, color: "#ff9eda"}, {correctAnswer: false, color: "#ff9eda"}, {correctAnswer: true, color: "#ff91d3"},{correctAnswer: false, color: "#ff9eda"},]
@@ -28,7 +27,6 @@ export class JuegoSalaComponent implements OnInit {
   arregloColores3 = [{correctAnswer: false, color: "#c6f890"}, {correctAnswer: false, color: "#c6f890"},{correctAnswer: false, color: "#c6f890"}, {correctAnswer: false, color: "#c6f890"},{correctAnswer: false, color: "#c6f890"}, {correctAnswer: true, color: "#d0faa4"},]
 
   num = "#E69F";
-
   text = this.num.toString();
 
   mensajeInicio1=""
@@ -53,6 +51,8 @@ export class JuegoSalaComponent implements OnInit {
     public readonly WebSocketsService: WebsocketsService,
     private renderer: Renderer2
   ) { }
+
+
 
   @HostListener('click') pasarLvl2() {
     setTimeout(() => {

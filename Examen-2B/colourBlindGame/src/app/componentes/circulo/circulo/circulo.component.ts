@@ -8,7 +8,13 @@ import { Router } from '@angular/router';
 })
 
 export class CirculoComponent implements OnInit {
+
   @ViewChild('dot', { static: false }) dot: ElementRef | undefined;
+
+  @Input()
+  respuestasCorrectas=0
+
+  respuestasIncorrectas=0
 
   mensaje:string=""
 
@@ -24,13 +30,15 @@ export class CirculoComponent implements OnInit {
   }
 
   @HostListener('click') onAnswered() {
-    if(this.correctAnswer)
+    if(this.correctAnswer == true)
       { // @ts-ignore
         this.renderer.setStyle(this.dot.nativeElement, 'background', '#47b647')
+        this.respuestasCorrectas += 1
       }
     else
       { // @ts-ignore
         this.renderer.setStyle(this.dot.nativeElement, 'background', '#ef5353')
+        this.respuestasIncorrectas += 1
       }
   }
 
