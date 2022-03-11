@@ -27,6 +27,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {BannerComponent} from "./componentes-banner/banner/banner.component";
 import { VentasComponent } from './componentes-auth/ventas/ventas.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { ActualizarComponent } from './componentes-auth/actualizar/actualizar.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     ForgotPasswordComponent,
     SignUpComponent,
     BannerComponent,
-    VentasComponent
+    VentasComponent,
+    ActualizarComponent
   ],
   imports: [
     BrowserModule,
