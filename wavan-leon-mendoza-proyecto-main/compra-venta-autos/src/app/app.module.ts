@@ -28,6 +28,7 @@ import {BannerComponent} from "./componentes-banner/banner/banner.component";
 import { VentasComponent } from './componentes-auth/ventas/ventas.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ActualizarComponent } from './componentes-auth/actualizar/actualizar.component';
+import { GestionVentasComponent } from './componentes-auth/gestion-ventas/gestion-ventas.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ActualizarComponent } from './componentes-auth/actualizar/actualizar.co
     SignUpComponent,
     BannerComponent,
     VentasComponent,
-    ActualizarComponent
+    ActualizarComponent,
+    GestionVentasComponent
   ],
   imports: [
     BrowserModule,
@@ -59,6 +61,7 @@ import { ActualizarComponent } from './componentes-auth/actualizar/actualizar.co
     MatDividerModule,
     MatSelectModule,
     MatGridListModule,
+    MatIconModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

@@ -7,6 +7,7 @@ import {SignUpComponent} from "./componentes-auth/sign-up/sign-up.component";
 import {ForgotPasswordComponent} from "./componentes-auth/forgot-password/forgot-password.component";
 import { VentasComponent } from './componentes-auth/ventas/ventas.component';
 import { ActualizarComponent } from './componentes-auth/actualizar/actualizar.component';
+import { GestionVentasComponent } from './componentes-auth/gestion-ventas/gestion-ventas.component';
 
 import {AuthGuard} from "./servicios/guard/auth.guard";
 
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'verify-email-address', component: VerifyEmailComponent },
   { path: 'ventas', component: VentasComponent },
   { path: 'actualizar', component: ActualizarComponent },
+  { path: 'gestion-ventas', component: GestionVentasComponent },
 ];
 
 @NgModule({
