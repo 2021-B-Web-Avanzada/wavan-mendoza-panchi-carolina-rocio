@@ -25,14 +25,13 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSelectModule} from '@angular/material/select';
 import {BannerComponent} from "./componentes-banner/banner/banner.component";
-<<<<<<< HEAD
+
 import { VehiculoVisualizacionComponent } from './componentes-auth/vehiculo-visualizacion/vehiculo-visualizacion.component';
-=======
 import { VentasComponent } from './componentes-auth/ventas/ventas.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ActualizarComponent } from './componentes-auth/actualizar/actualizar.component';
 import { GestionVentasComponent } from './componentes-auth/gestion-ventas/gestion-ventas.component';
->>>>>>> main
+
 
 @NgModule({
   declarations: [
@@ -43,13 +42,10 @@ import { GestionVentasComponent } from './componentes-auth/gestion-ventas/gestio
     ForgotPasswordComponent,
     SignUpComponent,
     BannerComponent,
-<<<<<<< HEAD
-    VehiculoVisualizacionComponent
-=======
+    VehiculoVisualizacionComponent,
     VentasComponent,
     ActualizarComponent,
     GestionVentasComponent
->>>>>>> main
   ],
   imports: [
     BrowserModule,

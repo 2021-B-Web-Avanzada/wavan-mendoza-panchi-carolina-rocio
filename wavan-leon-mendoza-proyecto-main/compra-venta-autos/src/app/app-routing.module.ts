@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {RouterModule, RouterOutlet, Routes} from '@angular/router';
 import {SignInComponent} from "./componentes-auth/sign-in/sign-in.component";
 import {DashboardComponent} from "./componentes-auth/dashboard/dashboard.component";
 import {VerifyEmailComponent} from "./componentes-auth/verify-email/verify-email.component";
