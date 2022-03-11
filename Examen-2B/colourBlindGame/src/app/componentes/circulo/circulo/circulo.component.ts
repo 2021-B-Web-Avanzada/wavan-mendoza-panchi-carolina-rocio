@@ -1,23 +1,37 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, Input, OnInit, Output, Renderer2, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-circulo',
   templateUrl: './circulo.component.html',
   styleUrls: ['./circulo.component.scss']
+
 })
+
 export class CirculoComponent implements OnInit {
+  @ViewChild('dot', { static: false }) dot: ElementRef | undefined;
 
-  constructor() { }
+  mensaje:string=""
 
+  @Input()
+  correctAnswer:boolean = false;
+
+  @Input()
+  color:string= "#ececec";
+
+  constructor(
+    private renderer:Renderer2) { }
   ngOnInit(): void {
   }
 
-  @Input()
-  color='#fggt4';
+  @HostListener('click') onAnswered() {
+    if(this.correctAnswer)
+      { // @ts-ignore
+        this.renderer.setStyle(this.dot.nativeElement, 'background', '#47b647')
+      }
+    else
+      { // @ts-ignore
+        this.renderer.setStyle(this.dot.nativeElement, 'background', '#ef5353')
+      }
+  }
 
-  @Input()
-  posX='';
-
-  @Input()
-  posY='';
 }

@@ -18,28 +18,12 @@ export class WebsocketsService {
     return this.socket.fromEvent('escucharEventoUnirseSala');
   }
 
-  seleccionarColor(nombre:string, idSala:string, carta:string|number){
-    this.socket.emit(
-      'colorSeleccionado',
-      {
-        nombre:nombre,
-        idJuego:idSala,
-        carta:carta
-      }
-    )
-  }
-
-  escucharColorSeleccionado(){
-    return this.socket.fromEvent('escucharColorSeleccionado')
-  }
-
-
-  ejecutarEventoEnviarMensaje(salaId: number, nombre:string, mensaje: string){
+  ejecutarEventoEnviarPuntaje(salaId: number, nombre:string, puntaje:number){
     this.socket.emit(
       'enviarMensaje',{
         nombre,
         salaId,
-        mensaje
+        puntaje
       }
     );
   }

@@ -1,7 +1,14 @@
 <app-nav-bar></app-nav-bar>
+
 <div class="container">
   <div class="row">
     <h1>{{mensajeInicio1}}</h1><br>
+  </div>
+
+  <div class="row" *ngFor="let mensaje of arregloJugadores">
+    <h3>Sala{{salaId}} - {{mensaje.nombre}}</h3>
+    <p>Puntaje contrincante: {{mensaje.puntaje}}</p>
+    <p>Tú puntaje: {{mensaje.puntaje}}</p>
   </div>
 
     <div class="row counter">
@@ -12,14 +19,41 @@
           <mat-icon>play_circle_filled</mat-icon>
         </button>
       </div>
-
 </div>
 
-<div class="mainBox">
-  <div class="box"><app-circulo></app-circulo></div>
-  <div class="box"><app-circulo></app-circulo></div>
-  <div class="box"> <app-circulo></app-circulo></div>
-  <div class="box"> <app-circulo></app-circulo></div>
-  <div class="box"> <app-circulo></app-circulo></div>
-  <div class="box">  <app-circulo></app-circulo></div>
+<div class="mainBox" (click)="pasarLvl2()" #divlvl1>
+  <div class= "box" *ngFor = "let colores of arregloColores; let i = index" >
+    <app-circulo [correctAnswer] = "colores.correctAnswer"
+                 [color] = "colores.color"
+    ></app-circulo>
+  </div >
 </div>
+
+<div class="mainBox" (click)="pasarLvl3()" #divlvl2>
+  <div class= "box" *ngFor = "let colores of arregloColores1; let i = index" >
+    <app-circulo [correctAnswer] = "colores.correctAnswer"
+                 [color] = "colores.color"
+    ></app-circulo>
+  </div >
+</div >
+
+<div class="mainBox" (click)="pasarLvl4()" #divlvl3>
+  <div class= "box" *ngFor = "let colores of arregloColores2; let i = index" >
+    <app-circulo [correctAnswer] = "colores.correctAnswer"
+                 [color] = "colores.color"
+    ></app-circulo>
+  </div >
+</div >
+
+<div class="mainBox" (click)="pasarLvl5()" #divlvl4>
+  <div class= "box" *ngFor = "let colores of arregloColores3; let i = index" >
+    <app-circulo [correctAnswer] = "colores.correctAnswer"
+                 [color] = "colores.color"
+    ></app-circulo>
+  </div >
+</div >
+
+
+
+
+

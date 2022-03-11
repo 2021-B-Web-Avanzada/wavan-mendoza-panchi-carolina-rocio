@@ -10,6 +10,7 @@ import {VentanaComponent} from 'src/app/componentes/ventana/ventana.component';
   styleUrls: ['./ruta-main.component.scss']
 })
 export class RutaMainComponent implements OnInit {
+
   formGroup = this.fb.group({
     nombreUsuario: new FormControl('',[
       Validators.required
