@@ -15,4 +15,8 @@ export class BannerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+    obtenerNombreUsuario(email: string) {
+        let indice = email.indexOf('@')
+        return email.substring(0,indice);
+    }
 }
