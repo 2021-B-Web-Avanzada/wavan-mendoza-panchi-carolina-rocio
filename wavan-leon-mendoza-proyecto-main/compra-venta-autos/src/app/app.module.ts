@@ -23,7 +23,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatSelectModule} from '@angular/material/select';
 import {BannerComponent} from "./componentes-banner/banner/banner.component";
+import { VentasComponent } from './componentes-auth/ventas/ventas.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import {BannerComponent} from "./componentes-banner/banner/banner.component";
     VerifyEmailComponent,
     ForgotPasswordComponent,
     SignUpComponent,
-    BannerComponent
+    BannerComponent,
+    VentasComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +55,8 @@ import {BannerComponent} from "./componentes-banner/banner/banner.component";
     MatToolbarModule,
     MatCardModule,
     MatDividerModule,
+    MatSelectModule,
+    MatGridListModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
