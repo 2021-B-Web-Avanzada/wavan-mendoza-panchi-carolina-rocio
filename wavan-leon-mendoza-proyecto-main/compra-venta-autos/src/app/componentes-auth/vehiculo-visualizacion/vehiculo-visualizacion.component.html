@@ -1,0 +1,22 @@
+<app-banner></app-banner>
+<div class="container mt-5 pb-3" style="background: #F3F3F3">
+  <div class="text-center p-5 ">
+    <img class="rounded-pill " src="{{vehiculo.img}}" alt="imagen vehículo" width="{{w}}" height="{{h}}">
+  </div>
+  <div class="text-center text-success" >
+    {{mensaje}}
+  </div>
+  <div class="mx-5 px-5 text-end">
+    <button class="btn fs-3" style="background: #7D6ED6; color: white;"(click)="anadirAlCarro()" [disabled]="anadido"><i class="fas fa-shopping-cart"></i></button>
+  </div>
+  <div style="padding-left: 300px">
+    <h2><strong>Marca:</strong> {{vehiculo.marca}}</h2>
+    <h2><strong>Tipo: </strong>{{vehiculo.tipo}}</h2>
+    <h2><strong>Modelo: </strong>{{vehiculo.modelo}}</h2>
+    <h2><strong>Año: </strong>{{vehiculo.anio}}</h2>
+    <h2><strong>Kilometraje: </strong>{{vehiculo.kilometraje}} Km</h2>
+    <h2><strong>Descripción: </strong>{{vehiculo.descripcion}}</h2>
+    <h2><strong>Color: </strong>{{vehiculo.color}}</h2>
+    <h2><strong>Teléfono de contacto: </strong>{{vehiculo.telefono}}</h2>
+  </div>
+</div>

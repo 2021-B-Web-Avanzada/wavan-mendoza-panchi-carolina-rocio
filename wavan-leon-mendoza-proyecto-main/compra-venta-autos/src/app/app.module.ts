@@ -24,6 +24,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {BannerComponent} from "./componentes-banner/banner/banner.component";
+import { VehiculoVisualizacionComponent } from './componentes-auth/vehiculo-visualizacion/vehiculo-visualizacion.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {BannerComponent} from "./componentes-banner/banner/banner.component";
     VerifyEmailComponent,
     ForgotPasswordComponent,
     SignUpComponent,
-    BannerComponent
+    BannerComponent,
+    VehiculoVisualizacionComponent
   ],
   imports: [
     BrowserModule,

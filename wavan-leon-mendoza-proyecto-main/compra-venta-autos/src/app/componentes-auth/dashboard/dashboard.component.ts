@@ -7,6 +7,7 @@ import {addDoc, collection, getDocs, query, where} from "@angular/fire/firestore
 import {environment} from "../../../environments/environment";
 import firebase from "firebase/compat";
 import DocumentData = firebase.firestore.DocumentData;
+import { Router} from "@angular/router";
 
 @Component({
   selector: 'app-dashboard',
@@ -23,9 +24,10 @@ export class DashboardComponent implements OnInit {
   tipo :DocumentData[] =[]
   marca :DocumentData[] =[]
   vehiculos :DocumentData[] =[]
-  anioFiltro: number =2022;
+  anioFiltro: string ="Todos";
   constructor(
     public authService: AuthService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -52,21 +54,52 @@ export class DashboardComponent implements OnInit {
     }
   }
   async obtenerVehiculos(){
+    this.anioFiltro = "Todos"
     let vehCol = collection(this.db, 'vehiculos');
     let vehSnapshot = await getDocs(vehCol);
     this.vehiculos = vehSnapshot.docs.map(doc => doc.data());
   }
 
 
-  filtrarAnio(anio: number) {
-    this.anioFiltro = anio
+  async filtrarAnio(anio: number) {
+    this.anioFiltro = anio.toString()
+    this.vehiculos = []
+    let vehCol = collection(this.db, 'vehiculos');
+    let vehSnapshot =  query(vehCol,where('anio', '==',anio.toString()));
+    let vehiculoQ = await getDocs(vehSnapshot)
+    this.vehiculos = vehiculoQ.docs.map(doc => doc.data())
   }
 
   async filtrarPorTipo(tipo:string) {
+    this.vehiculos = []
+    let vehCol = collection(this.db, 'vehiculos');
+    let vehSnapshot =  query(vehCol,where('tipo', '==',tipo));
+    let vehiculoQ = await getDocs(vehSnapshot)
+    this.vehiculos = vehiculoQ.docs.map(doc => doc.data())
+  }
+
+  async filtrarPorMarca(marca:string) {
+    this.vehiculos = []
+    let vehCol = collection(this.db, 'vehiculos');
+    let vehSnapshot =  query(vehCol,where('marca', '==',marca));
+    let vehiculoQ = await getDocs(vehSnapshot)
+    this.vehiculos = vehiculoQ.docs.map(doc => doc.data())
 
   }
 
-  filtrarPorMarca(marca:string) {
-
+  verAuto(vehiculo:DocumentData) {
+    this.router.navigate(['/vehiculo',
+      { anio: vehiculo['anio'],
+        color: vehiculo['color'],
+        descripcion: vehiculo['descripcion'],
+        duenio: vehiculo['duenio'],
+        img: vehiculo['img'],
+        kilometraje: vehiculo['kilometraje'],
+        marca: vehiculo['marca'],
+        modelo: vehiculo['modelo'],
+        telefono: vehiculo['telefono'],
+        tipo: vehiculo['tipo']
+      }
+    ])
   }
 }

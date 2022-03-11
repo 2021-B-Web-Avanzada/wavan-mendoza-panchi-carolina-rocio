@@ -7,6 +7,7 @@ import {SignUpComponent} from "./componentes-auth/sign-up/sign-up.component";
 import {ForgotPasswordComponent} from "./componentes-auth/forgot-password/forgot-password.component";
 
 import {AuthGuard} from "./servicios/guard/auth.guard";
+import {VehiculoVisualizacionComponent} from "./componentes-auth/vehiculo-visualizacion/vehiculo-visualizacion.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent ,canActivate: [AuthGuard]},
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
+  { path: 'vehiculo', component: VehiculoVisualizacionComponent },
 ];
 
 @NgModule({
