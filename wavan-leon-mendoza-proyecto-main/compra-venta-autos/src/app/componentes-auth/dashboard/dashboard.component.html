@@ -7,13 +7,13 @@
         <div class="text-center fs-5 fw-bold py-2">
           Tipo
         </div>
-        <div class="text-center" *ngFor="let cat of tipo" (click)="filtrarCategoria(cat['nombre'])">
+        <div class="text-center" *ngFor="let cat of tipo" (click)="filtrarPorTipo(cat['nombre'])">
           <button class="btn">{{cat['nombre']}}</button>
         </div>
         <div class="text-center fs-5 fw-bold py-2">
           Marca
         </div>
-        <div class="text-center" *ngFor="let mar of marca" (click)="filtrarCategoria(mar['nombre'])">
+        <div class="text-center" *ngFor="let mar of marca" (click)="filtrarPorMarca(mar['nombre'])">
           <button class="btn">{{mar['nombre']}}</button>
         </div>
         <div class="dropdown text-center">

@@ -3,7 +3,7 @@ import {AuthService} from "../../servicios/auth/auth.service";
 
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import {addDoc, collection, getDocs} from "@angular/fire/firestore";
+import {addDoc, collection, getDocs, query, where} from "@angular/fire/firestore";
 import {environment} from "../../../environments/environment";
 import firebase from "firebase/compat";
 import DocumentData = firebase.firestore.DocumentData;
@@ -14,6 +14,7 @@ import DocumentData = firebase.firestore.DocumentData;
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  //para la base
   app = initializeApp(environment.firebase);
   db = getFirestore();
 
@@ -49,7 +50,6 @@ export class DashboardComponent implements OnInit {
     for (var i = 1; i<50 ; i++){
       this.anios.push(i)
     }
-    console.log(this.anios, 'asdasdasd')
   }
   async obtenerVehiculos(){
     let vehCol = collection(this.db, 'vehiculos');
@@ -57,11 +57,16 @@ export class DashboardComponent implements OnInit {
     this.vehiculos = vehSnapshot.docs.map(doc => doc.data());
   }
 
-  filtrarCategoria(catElement:string) {
-    console.log('aasdasdad')
-  }
 
   filtrarAnio(anio: number) {
     this.anioFiltro = anio
+  }
+
+  async filtrarPorTipo(tipo:string) {
+
+  }
+
+  filtrarPorMarca(marca:string) {
+
   }
 }
