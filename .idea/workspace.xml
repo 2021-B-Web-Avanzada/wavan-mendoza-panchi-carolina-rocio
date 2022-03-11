@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a17624a3-6fb5-42b8-b0cf-605b2ccfc67e" name="Changes" comment="actualizar producto">
+    <list default="true" id="a17624a3-6fb5-42b8-b0cf-605b2ccfc67e" name="Changes" comment="gestion productos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wavan-leon-mendoza-proyecto-main/compra-venta-autos/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/wavan-leon-mendoza-proyecto-main/compra-venta-autos/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wavan-leon-mendoza-proyecto-main/compra-venta-autos/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/wavan-leon-mendoza-proyecto-main/compra-venta-autos/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wavan-leon-mendoza-proyecto-main/compra-venta-autos/src/app/componentes-auth/ventas/ventas.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/wavan-leon-mendoza-proyecto-main/compra-venta-autos/src/app/componentes-auth/ventas/ventas.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wavan-leon-mendoza-proyecto-main/compra-venta-autos/src/app/componentes-auth/ventas/ventas.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/wavan-leon-mendoza-proyecto-main/compra-venta-autos/src/app/componentes-auth/ventas/ventas.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +126,7 @@
       <workItem from="1645310670198" duration="2996000" />
       <workItem from="1645368584933" duration="6197000" />
       <workItem from="1645398653560" duration="68000" />
-      <workItem from="1647030838865" duration="10268000" />
+      <workItem from="1647030838865" duration="11432000" />
     </task>
     <task id="LOCAL-00001" summary="sigin-sigup">
       <created>1646888569741</created>
@@ -149,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647038392050</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="gestion productos">
+      <created>1647041223667</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1647041223667</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +178,8 @@
     <MESSAGE value="sigin-sigup" />
     <MESSAGE value="crear producto" />
     <MESSAGE value="actualizar producto" />
-    <option name="LAST_COMMIT_MESSAGE" value="actualizar producto" />
+    <MESSAGE value="gestion productos" />
+    <option name="LAST_COMMIT_MESSAGE" value="gestion productos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
