@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import {AuthService} from "../../servicios/auth/auth.service";
 
 @Component({
@@ -9,7 +10,8 @@ import {AuthService} from "../../servicios/auth/auth.service";
 export class BannerComponent implements OnInit {
 
   constructor(
-    public auth: AuthService
+    public auth: AuthService,
+    private enrutador:Router,
   ) { }
 
   ngOnInit(): void {

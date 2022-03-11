@@ -1,0 +1,117 @@
+<app-banner></app-banner>
+
+<br><br><h1 class="title">Actualizar artículo</h1><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h2>Tipo: </h2><br>
+    </div>
+
+    <div class="col-10">
+      <mat-form-field appearance="fill">
+        <mat-label>Seleccione</mat-label>
+        <mat-select>
+          <mat-option value="1">Moto</mat-option>
+          <mat-option value="2">Auto</mat-option>
+        </mat-select>
+      </mat-form-field><br>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <h2>Marca: </h2><br>
+      </div>
+      <div class="col-10">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Ingrese la marca</mat-label>
+          <input matInput>
+        </mat-form-field><br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+        <h2>Kilometraje: </h2><br>
+      </div>
+      <div class="col-10">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Ingrese el kilometraje</mat-label>
+          <input matInput>
+        </mat-form-field><br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+        <h2>Color: </h2><br>
+      </div>
+
+      <div class="col-10">
+        <mat-form-field appearance="fill">
+          <mat-label>Seleccione</mat-label>
+          <mat-select>
+            <mat-option value="1">Rojo</mat-option>
+            <mat-option value="2">Negro</mat-option>
+            <mat-option value="3">Blanco</mat-option>
+            <mat-option value="4">Gris</mat-option>
+            <mat-option value="5">Dorado</mat-option>
+          </mat-select>
+        </mat-form-field><br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+        <h2>Foto: </h2><br>
+      </div>
+      <div class="col-10">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Ingrese URL</mat-label>
+          <input matInput>
+        </mat-form-field><br>
+      </div>
+
+      <div class="row">
+        <div class="col-sm">
+          <h2>Modelo: </h2><br>
+        </div>
+        <div class="col-10">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Ingrese el modelo</mat-label>
+            <input matInput>
+          </mat-form-field><br>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm">
+          <h2>Año: </h2><br>
+        </div>
+
+        <div class="col-10">
+          <mat-form-field appearance="fill">
+            <mat-label>Seleccione</mat-label>
+            <mat-select>
+              <mat-option value="1">1974</mat-option>
+              <mat-option value="2">Second option</mat-option>
+            </mat-select>
+          </mat-form-field><br>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm">
+          <h2>Descripción: </h2><br>
+        </div>
+
+        <div class="col-10">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Descripcion del automóvil</mat-label>
+            <textarea matInput></textarea>
+          </mat-form-field><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="fill" mat-raised-button color="primary">Actualizar</button>
+</div>

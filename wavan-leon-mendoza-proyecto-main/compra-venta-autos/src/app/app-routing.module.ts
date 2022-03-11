@@ -5,6 +5,9 @@ import {DashboardComponent} from "./componentes-auth/dashboard/dashboard.compone
 import {VerifyEmailComponent} from "./componentes-auth/verify-email/verify-email.component";
 import {SignUpComponent} from "./componentes-auth/sign-up/sign-up.component";
 import {ForgotPasswordComponent} from "./componentes-auth/forgot-password/forgot-password.component";
+import { VentasComponent } from './componentes-auth/ventas/ventas.component';
+import { ActualizarComponent } from './componentes-auth/actualizar/actualizar.component';
+import { GestionVentasComponent } from './componentes-auth/gestion-ventas/gestion-ventas.component';
 
 import {AuthGuard} from "./servicios/guard/auth.guard";
 import {VehiculoVisualizacionComponent} from "./componentes-auth/vehiculo-visualizacion/vehiculo-visualizacion.component";
@@ -16,6 +19,9 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent ,canActivate: [AuthGuard]},
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
+  { path: 'ventas', component: VentasComponent },
+  { path: 'actualizar', component: ActualizarComponent },
+  { path: 'gestion-ventas', component: GestionVentasComponent },
   { path: 'vehiculo', component: VehiculoVisualizacionComponent },
 ];
 
