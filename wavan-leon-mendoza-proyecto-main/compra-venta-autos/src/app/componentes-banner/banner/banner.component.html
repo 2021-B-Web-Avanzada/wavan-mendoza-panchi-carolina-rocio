@@ -1,9 +1,16 @@
+
 <div class="container-fluid row m-0" style="background: #7D6ED6">
   <div class="col row align-items-end fs-5">
     <div class="d-flex flex-row bd-highlight">
-      <div class="p-2 bd-highlight">Flex item 1</div>
-      <div class="p-2 bd-highlight">Flex item 2</div>
-      <div class="p-2 bd-highlight">Flex item 3</div>
+      <div class="p-2 bd-highlight ">
+        <a href="" style="text-decoration: none; color: white ; font-size: 18px">Vender</a>
+      </div>
+      <div class="p-2 bd-highlight ">
+        <a href="" style="text-decoration: none; color: white ; font-size: 18px">Mis compras</a>
+      </div>
+      <!--      <div class="p-2 bd-highlight">-->
+      <!--        <a href="" style="text-decoration: none; color: white ; font-size: 18px">Mensajes</a>-->
+      <!--      </div>-->
     </div>
   </div>
   <div class="col text-center text-light fst-italic">
@@ -14,5 +21,22 @@
       <h1>Auto  Marker</h1>
     </div>
   </div>
-  <div class="col">a</div>
+  <div class="col row align-items-end fs-5">
+    <div class="d-flex flex-row-reverse bd-highlight">
+      <div class="p-2 bd-highlight ">
+        <a href="" class="text-light" (click)="auth.SignOut()" style="text-decoration-line: none">
+          Salir
+        </a>
+      </div>
+      <div class="p-2 bd-highlight ">
+        <a href="" class="fas fa-bell text-light" style="text-decoration: none"></a>
+      </div>
+      <div class="p-2 bd-highlight text-light" *ngIf="auth.userData as user" style="">
+        {{user.displayName}}
+      </div>
+      <!--      <div class="p-2 bd-highlight">-->
+      <!--        <a href="" style="text-decoration: none; color: white ; font-size: 18px">Mensajes</a>-->
+      <!--      </div>-->
+    </div>
+  </div>
 </div>
