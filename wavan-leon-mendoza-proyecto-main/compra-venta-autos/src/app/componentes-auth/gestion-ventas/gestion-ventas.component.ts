@@ -25,7 +25,8 @@ export class GestionVentasComponent implements OnInit {
   vehiculos: DocumentData[] = []
   anioFiltro: number = 2022;
 
-  constructor(public authService: AuthService
+  constructor(
+    public authService: AuthService,
   ) {
   }
 
