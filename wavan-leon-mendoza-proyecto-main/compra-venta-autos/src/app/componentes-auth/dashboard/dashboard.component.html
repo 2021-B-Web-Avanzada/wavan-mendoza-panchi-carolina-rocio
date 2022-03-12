@@ -23,13 +23,16 @@
           <button class="btn">{{mar['nombre']}}</button>
         </div>
         <div class="dropdown text-center">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            {{anioFiltro}}
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item"(click)="obtenerVehiculos()">Todos</a></li>
-            <li><a class="dropdown-item" *ngFor="let i of anios" (click)="filtrarAnio(2023-i)">{{2023-i}}</a></li>
-          </ul>
+          <div class="text-center fs-5 fw-bold py-2">
+            Año
+          </div>
+          <mat-form-field appearance="fill">
+            <mat-label>{{anioFiltro}}</mat-label>
+            <mat-select>
+              <mat-option class="text-center"  (click)="obtenerVehiculos()">Todos</mat-option>
+              <mat-option class="text-center" *ngFor="let i of anios" (click)="filtrarAnio(2023-i)">{{2023-i}}</mat-option>
+            </mat-select>
+          </mat-form-field><br>
         </div>
       </div>
     </div>

@@ -21,4 +21,8 @@ export class BannerComponent implements OnInit {
         let indice = email.indexOf('@')
         return email.substring(0,indice);
     }
+
+  irPrincipal() {
+    this.enrutador.navigate(['/dashboard'])
+  }
 }

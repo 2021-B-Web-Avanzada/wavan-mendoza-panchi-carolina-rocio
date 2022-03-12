@@ -11,9 +11,8 @@
     <div class="col-10">
       <mat-form-field appearance="fill">
         <mat-label>Seleccione</mat-label>
-        <mat-select>
-          <mat-option value="1">Moto</mat-option>
-          <mat-option value="2">Auto</mat-option>
+        <mat-select #tipoc>
+          <mat-option *ngFor="let i of tipo"  [value]="i">{{i['nombre']}}</mat-option>
         </mat-select>
       </mat-form-field><br>
     </div>
@@ -24,21 +23,20 @@
     <div class="col-10">
       <mat-form-field appearance="fill">
         <mat-label>Seleccione</mat-label>
-        <mat-select>
-          <mat-option value="1">Moto</mat-option>
-          <mat-option value="2">Auto</mat-option>
+        <mat-select #marcac>
+          <mat-option *ngFor="let i of marca"  [value]="i">{{i['nombre']}}</mat-option>
         </mat-select>
       </mat-form-field><br>
   </div>
 
   <div class="row">
-    <div class="col-sm">
+    <div class="col-2">
       <h2>Kilometraje: </h2><br>
     </div>
     <div class="col-10">
       <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Ingrese el kilometraje</mat-label>
-        <input matInput>
+        <input matInput #kilometraje>
       </mat-form-field><br>
     </div>
   </div>
@@ -51,12 +49,12 @@
     <div class="col-10">
       <mat-form-field appearance="fill">
         <mat-label>Seleccione</mat-label>
-        <mat-select>
-          <mat-option value="1">Rojo</mat-option>
-          <mat-option value="2">Negro</mat-option>
-          <mat-option value="3">Blanco</mat-option>
-          <mat-option value="4">Gris</mat-option>
-          <mat-option value="5">Dorado</mat-option>
+        <mat-select #color>
+          <mat-option value="Rojo">Rojo</mat-option>
+          <mat-option value="Negro">Negro</mat-option>
+          <mat-option value="Blanco">Blanco</mat-option>
+          <mat-option value="Gris">Gris</mat-option>
+          <mat-option value="Dorado">Dorado</mat-option>
         </mat-select>
       </mat-form-field><br>
     </div>
@@ -69,7 +67,7 @@
     <div class="col-10">
       <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Ingrese URL</mat-label>
-        <input matInput>
+        <input matInput #img>
       </mat-form-field><br>
     </div>
 
@@ -80,7 +78,7 @@
       <div class="col-10">
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Ingrese el modelo</mat-label>
-          <input matInput>
+          <input matInput #modelo>
         </mat-form-field><br>
       </div>
     </div>
@@ -93,29 +91,40 @@
       <div class="col-10">
         <mat-form-field appearance="fill">
           <mat-label>Seleccione</mat-label>
-          <mat-select>
-            <mat-option value="1">1974</mat-option>
-            <mat-option value="2">Second option</mat-option>
+          <mat-select #anio>
+            <mat-option *ngFor="let i of anios"  [value]="2023-i" >{{2023-i}}</mat-option>
           </mat-select>
+        </mat-form-field><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <h2>Teléfono: </h2><br>
+      </div>
+      <div class="col-10">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Ingrese su teléfono</mat-label>
+          <input matInput #telefono>
         </mat-form-field><br>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm">
+      <div class="col-2">
         <h2>Descripción: </h2><br>
       </div>
 
       <div class="col-10">
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Descripcion del automóvil</mat-label>
-          <textarea matInput></textarea>
+          <textarea matInput #descripcion></textarea>
         </mat-form-field><br>
       </div>
     </div>
   </div>
   </div>
-  <button class="fill" mat-raised-button color="primary">Crear</button>
+      <h3 class="text-success">{{mensaje}}</h3>
+  <button class="fill" mat-raised-button color="primary"(click)="crearPublicacion(tipoc.value,marcac.value,kilometraje.value,color.value,img.value,modelo.value,anio.value,descripcion.value,telefono.value)" >Crear</button>
 </div>
 
 

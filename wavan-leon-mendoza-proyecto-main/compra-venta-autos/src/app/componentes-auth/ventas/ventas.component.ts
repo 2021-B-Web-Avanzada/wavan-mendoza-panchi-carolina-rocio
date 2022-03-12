@@ -17,9 +17,9 @@ export class VentasComponent implements OnInit {
   db = getFirestore();
 
   anios: number[] =[]
-  tipo :DocumentData[] =[]
+  tipo :DocumentData[]  =[]
   marca :DocumentData[] =[]
-
+  mensaje: string  ="";
   formGroup = this.fb.group({
     userEmail: new FormControl('',[
       Validators.required
@@ -29,6 +29,7 @@ export class VentasComponent implements OnInit {
     ])
   });
 
+
   constructor(
     private enrutador:Router,
     private fb: FormBuilder,
@@ -36,6 +37,9 @@ export class VentasComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
+    this.obtenerAnios()
+    this.obtenerMarca()
+    this.obtenerTipo()
   }
 
   async obtenerTipo(){
@@ -53,5 +57,21 @@ export class VentasComponent implements OnInit {
     for (var i = 1; i<50 ; i++){
       this.anios.push(i)
     }
+  }
+
+  async crearPublicacion(tipoc:string, marcac:string,kilometraje:string,color:string,foto:string,modelo:string,anio:string,descripcion:string,telefono:string) {
+    let docRef = await addDoc(collection(this.db, "vehiculos"), {
+      anio: anio,
+      color: color,
+      descripcion: descripcion,
+      duenio: this.auth.userData.uid,
+      img: foto,
+      kilometraje: kilometraje,
+      marca: marcac,
+      modelo: modelo,
+      telefono: telefono,
+      tipo: tipoc,
+    });
+    this.mensaje = "Publicación realizada"
   }
 }
