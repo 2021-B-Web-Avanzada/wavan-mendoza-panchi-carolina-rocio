@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import {addDoc, collection, getDocs, query, where} from "@angular/fire/firestore";
-import {environment} from "../../../environments/environment";
+import {addDoc, collection, deleteDoc, doc, getDocs, query, where} from "@angular/fire/firestore";
+import { environment} from "../../../environments/environment";
 import firebase from "firebase/compat";
 import DocumentData = firebase.firestore.DocumentData;
 import { AuthService } from 'src/app/servicios/auth/auth.service';
+import { User } from 'src/app/servicios/auth/user';
 import {MatButtonModule} from '@angular/material/button';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-gestion-ventas',
@@ -24,13 +26,12 @@ export class GestionVentasComponent implements OnInit {
   marca: DocumentData[] = []
   vehiculos: DocumentData[] = []
   anioFiltro: number = 2022;
-
-  constructor(
-    public authService: AuthService,
-  ) {
-  }
+  user : User | undefined
+  constructor(public authService: AuthService,
+              private router: Router){}
 
   ngOnInit(): void {
+    this.user =JSON.parse(localStorage.getItem('user')!)
     this.obtenerTipo()
     this.obtenerMarca()
     this.obtenerVehiculos()
@@ -48,10 +49,33 @@ export class GestionVentasComponent implements OnInit {
     this.marca = marcaSnapshot.docs.map(doc => doc.data());
   }
 
-  async obtenerVehiculos() {
+  async obtenerVehiculos(){
+    this.vehiculos = []
     let vehCol = collection(this.db, 'vehiculos');
-    let vehSnapshot = await getDocs(vehCol);
-    this.vehiculos = vehSnapshot.docs.map(doc => doc.data());
+    let vehSnapshot =  query(vehCol,where('duenio', '==',this.user?.uid));
+    let vehiculoQ = await getDocs(vehSnapshot)
+    this.vehiculos = vehiculoQ.docs.map(doc => doc.data())
   }
 
+  async eliminar(i : number) {
+    let vehCol = collection(this.db, 'vehiculos');
+    let vehSnapshot =  query(vehCol,where('duenio', '==',this.user?.uid));
+    let vehiculoQ = await getDocs(vehSnapshot)
+    let ids = vehiculoQ.docs.map(doc => doc.id)
+    let ideliminar = ids[i]
+    this.eliminarDoc(ideliminar)
+  }
+  async eliminarDoc(id:string){
+    await deleteDoc(doc(this.db, "vehiculos", id));
+    this.obtenerVehiculos()
+  }
+
+  async actualizar(i: number) {
+    let vehCol = collection(this.db, 'vehiculos');
+    let vehSnapshot =  query(vehCol,where('duenio', '==',this.user?.uid));
+    let vehiculoQ = await getDocs(vehSnapshot)
+    let ids = vehiculoQ.docs.map(doc => doc.id)
+    let idActualizar = ids[i]
+    this.router.navigate(['/actualizar', { id: idActualizar }]);
+  }
 }

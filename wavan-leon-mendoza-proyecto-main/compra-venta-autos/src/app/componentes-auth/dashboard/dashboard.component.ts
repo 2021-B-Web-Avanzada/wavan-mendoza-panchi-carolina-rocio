@@ -8,6 +8,7 @@ import {environment} from "../../../environments/environment";
 import firebase from "firebase/compat";
 import DocumentData = firebase.firestore.DocumentData;
 import { Router} from "@angular/router";
+import {User} from "../../servicios/auth/user";
 
 @Component({
   selector: 'app-dashboard',
@@ -25,12 +26,15 @@ export class DashboardComponent implements OnInit {
   marca :DocumentData[] =[]
   vehiculos :DocumentData[] =[]
   anioFiltro: string ="Todos";
+  user : User | undefined
   constructor(
     public authService: AuthService,
     private router: Router
-  ) { }
+  ) {
+  }
 
   ngOnInit(): void {
+    this.user =JSON.parse(localStorage.getItem('user')!)
     this.obtenerTipo()
     this.obtenerMarca()
     this.obtenerAnios()
@@ -54,10 +58,10 @@ export class DashboardComponent implements OnInit {
     }
   }
   async obtenerVehiculos(){
-    this.anioFiltro = "Todos"
     let vehCol = collection(this.db, 'vehiculos');
-    let vehSnapshot = await getDocs(vehCol);
-    this.vehiculos = vehSnapshot.docs.map(doc => doc.data());
+    let vehSnapshot =  query(vehCol,where('duenio', '!=',this.user?.uid));
+    let vehiculoQ = await getDocs(vehSnapshot)
+    this.vehiculos = vehiculoQ.docs.map(doc => doc.data())
   }
 
 
@@ -65,7 +69,7 @@ export class DashboardComponent implements OnInit {
     this.anioFiltro = anio.toString()
     this.vehiculos = []
     let vehCol = collection(this.db, 'vehiculos');
-    let vehSnapshot =  query(vehCol,where('anio', '==',anio));
+    let vehSnapshot =  query(vehCol,where('anio', '==',anio),where('duenio', '!=',this.user?.uid));
     let vehiculoQ = await getDocs(vehSnapshot)
     this.vehiculos = vehiculoQ.docs.map(doc => doc.data())
   }
@@ -73,7 +77,7 @@ export class DashboardComponent implements OnInit {
   async filtrarPorTipo(tipo:string) {
     this.vehiculos = []
     let vehCol = collection(this.db, 'vehiculos');
-    let vehSnapshot =  query(vehCol,where('tipo', '==',tipo));
+    let vehSnapshot =  query(vehCol,where('tipo', '==',tipo),where('duenio', '!=',this.user?.uid));
     let vehiculoQ = await getDocs(vehSnapshot)
     this.vehiculos = vehiculoQ.docs.map(doc => doc.data())
   }
@@ -81,10 +85,9 @@ export class DashboardComponent implements OnInit {
   async filtrarPorMarca(marca:string) {
     this.vehiculos = []
     let vehCol = collection(this.db, 'vehiculos');
-    let vehSnapshot =  query(vehCol,where('marca', '==',marca));
+    let vehSnapshot =  query(vehCol,where('marca', '==',marca),where('duenio', '!=',this.user?.uid));
     let vehiculoQ = await getDocs(vehSnapshot)
     this.vehiculos = vehiculoQ.docs.map(doc => doc.data())
-
   }
 
   verAuto(vehiculo:DocumentData) {

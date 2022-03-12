@@ -11,8 +11,10 @@ export const environment = {
     storageBucket: "compra-venta-autos.appspot.com",
     messagingSenderId: "952164777621",
     appId: "1:952164777621:web:58ee3fd92aace82ebae59c"
-  }
+  },
+
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
