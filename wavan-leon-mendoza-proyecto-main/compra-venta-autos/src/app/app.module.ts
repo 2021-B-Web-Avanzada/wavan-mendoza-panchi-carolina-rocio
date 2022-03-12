@@ -31,6 +31,7 @@ import { VentasComponent } from './componentes-auth/ventas/ventas.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ActualizarComponent } from './componentes-auth/actualizar/actualizar.component';
 import { GestionVentasComponent } from './componentes-auth/gestion-ventas/gestion-ventas.component';
+import { GestionComprasComponent } from './componentes-auth/gestion-compras/gestion-compras.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { GestionVentasComponent } from './componentes-auth/gestion-ventas/gestio
     VehiculoVisualizacionComponent,
     VentasComponent,
     ActualizarComponent,
-    GestionVentasComponent
+    GestionVentasComponent,
+    GestionComprasComponent
   ],
   imports: [
     BrowserModule,

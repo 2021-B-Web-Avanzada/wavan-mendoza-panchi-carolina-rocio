@@ -3,13 +3,13 @@
   <div class="col row align-items-end fs-5">
     <div class="d-flex flex-row bd-highlight">
       <div class="p-2 bd-highlight ">
-        <a href="/ventas" style="text-decoration: none; color: white ; font-size: 18px" >Vender</a>
+        <a href="/ventas" style="text-decoration: none; color: white ; font-size: 16px" >Crear Publicación</a>
       </div>
       <div class="p-2 bd-highlight ">
-        <a href="/gestion-ventas" style="text-decoration: none; color: white ; font-size: 18px" >Mis Publicaciones</a>
+        <a href="/gestion-ventas" style="text-decoration: none; color: white ; font-size: 16px" >Mis Publicaciones</a>
       </div>
       <div class="p-2 bd-highlight ">
-        <a href="" style="text-decoration: none; color: white ; font-size: 18px">Mis compras</a>
+        <a href="/gestion-compras" style="text-decoration: none; color: white ; font-size: 16px">Mi carrito</a>
       </div>
       <!--      <div class="p-2 bd-highlight">-->
       <!--        <a href="" style="text-decoration: none; color: white ; font-size: 18px">Mensajes</a>-->
@@ -27,15 +27,14 @@
   <div class="col row align-items-end fs-5">
     <div class="d-flex flex-row-reverse bd-highlight">
       <div class="p-2 bd-highlight ">
-        <a href="" class="text-light" (click)="auth.SignOut()" style="text-decoration-line: none">
+        <a href="" class="text-light" (click)="auth.SignOut()" style="text-decoration-line: none; font-size: 16px">
           Salir
         </a>
+        <mat-icon  aria-hidden="false" class="white-icon" (click)="auth.SignOut()"> exit_to_app </mat-icon>
       </div>
-      <div class="p-2 bd-highlight ">
-        <a href="" class="fas fa-bell text-light" style="text-decoration: none"></a>
-      </div>
-      <div class="p-2 bd-highlight text-light" *ngIf="auth.userData as user" style="">
-        <img class="rounded-circle" src="{{(user.photoURL) ? user.photoURL : 'https://cdn.icon-icons.com/icons2/1369/PNG/512/-person_90382.png'}}" alt="imagen usuario" width="20px" height="20px">
+
+      <div class="p-2 bd-highlight text-light" *ngIf="auth.userData as user" style="text-decoration: none; color: white ; font-size: 16px">
+        <img class="rounded-circle" src="{{(user.photoURL) ? user.photoURL : 'https://cdn.icon-icons.com/icons2/1369/PNG/512/-person_90382.png'}}" alt="imagen usuario" width="35px" height="35px" >
         {{(user.displayName) ? user.displayName:obtenerNombreUsuario(user.email)}}
       </div>
       <!--      <div class="p-2 bd-highlight">-->

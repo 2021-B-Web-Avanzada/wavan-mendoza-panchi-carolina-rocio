@@ -8,6 +8,7 @@ import {ForgotPasswordComponent} from "./componentes-auth/forgot-password/forgot
 import { VentasComponent } from './componentes-auth/ventas/ventas.component';
 import { ActualizarComponent } from './componentes-auth/actualizar/actualizar.component';
 import { GestionVentasComponent } from './componentes-auth/gestion-ventas/gestion-ventas.component';
+import { GestionComprasComponent } from './componentes-auth/gestion-compras/gestion-compras.component';
 
 import {AuthGuard} from "./servicios/guard/auth.guard";
 import {VehiculoVisualizacionComponent} from "./componentes-auth/vehiculo-visualizacion/vehiculo-visualizacion.component";
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'actualizar', component: ActualizarComponent },
   { path: 'gestion-ventas', component: GestionVentasComponent },
   { path: 'vehiculo', component: VehiculoVisualizacionComponent },
+  { path: 'gestion-compras', component: GestionComprasComponent },
 ];
 
 @NgModule({
