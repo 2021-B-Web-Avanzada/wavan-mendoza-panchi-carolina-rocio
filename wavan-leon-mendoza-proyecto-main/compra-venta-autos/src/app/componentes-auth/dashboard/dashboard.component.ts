@@ -65,7 +65,7 @@ export class DashboardComponent implements OnInit {
     this.anioFiltro = anio.toString()
     this.vehiculos = []
     let vehCol = collection(this.db, 'vehiculos');
-    let vehSnapshot =  query(vehCol,where('anio', '==',anio.toString()));
+    let vehSnapshot =  query(vehCol,where('anio', '==',anio));
     let vehiculoQ = await getDocs(vehSnapshot)
     this.vehiculos = vehiculoQ.docs.map(doc => doc.data())
   }
